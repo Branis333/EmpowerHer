@@ -33,11 +33,12 @@ DATABASES = {
 
 # Paths
 BASE_DIR = Path(__file__).resolve().parent.parent
+ROOT_URLCONF = 'django_project2.urls'
 
 # Security Settings
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'default_secret_key')
 DEBUG = False  # Make sure DEBUG is set to False in production
-ALLOWED_HOSTS = ['empowerher.onrender.com', 'localhost']# You can specify your allowed hosts or use '*' for all hosts
+ALLOWED_HOSTS = ['empowerher.onrender.com', 'localhost', '127.0.0.1']# You can specify your allowed hosts or use '*' for all hosts
 
 # Application Configuration
 INSTALLED_APPS = [
